@@ -1,1 +1,18 @@
+Installa dipendenze:
 
+bash
+pip install matplotlib numpy
+
+Esegui:
+
+bash
+python trajectory_generator.py
+
+Output generato:
+
+outputs/
+├── trajectory_2d.png       # Vista top-down
+├── velocity_profile.png    # Grafici velocità/accelerazione  
+├── project_preview.png     # Immagine composita per portfolio
+├── program.mod             # Codice RAPID
+└── trajectory_data.json    # Dati grezzi
