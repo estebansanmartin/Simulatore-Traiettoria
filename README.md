@@ -1,15 +1,18 @@
 # 🤖 Robot Trajectory Simulator
 
-Simulatore di traiettorie per robot industriali ABB con generazione codice RAPID e analisi cinematica.
+Simulatore di traiettorie per robot industriali ABB con cinematica avanzata e esportazione codice RAPID.
 
 ## Panoramica
 
-Progetto Python che simula il comportamento reale dei movimenti robot ABB, includendo:
-- Profili di moto trapezoidali (accelerazione/velocità/decelerazione reali)
-- Gestione zone di precisione (z0, z1, z5, z10, z20, z50, fine)
-- Calcolo tempo ciclo accurato
-- Esportazione codice RAPID pronto per FlexPendant
-- Visualizzazione 2D con heatmap velocità
+Tool Python per la simulazione offline di movimenti robotici, sviluppato per ottimizzare cicli di saldatura senza fermare la produzione. Calcola profili di moto realistici, genera codice RAPID e visualizza traiettorie con heatmap di velocità.
+
+## Caratteristiche Tecniche
+
+- **Profili di moto trapezoidali**: Accelerazione costante, velocità di crociera, decelerazione
+- **Gestione zone ABB**: z0, z1, z5, z10, z20, z50, fine con calcolo deviazione pre-punto
+- **Cinematica 2D**: Interpolazione cartesiana con step temporale configurabile (default 20ms)
+- **Esportazione RAPID**: Codice sintatticamente corretto per controller IRC5
+- **Visualizzazione**: Heatmap velocità, zone di precisione, vettori direzione
 
 ## Output
 
@@ -20,4 +23,8 @@ Progetto Python che simula il comportamento reale dei movimenti robot ABB, inclu
 ## Installazione
 
 ```bash
+git clone https://github.com/tuousername/robot-trajectory-simulator.git
+cd robot-trajectory-simulator
 pip install -r requirements.txt
+
+
